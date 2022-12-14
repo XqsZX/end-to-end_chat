@@ -71,7 +71,7 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
 
         try {
             // Creat a client socket
-            Socket socket = new Socket("192.168.1.97", 8888);
+            Socket socket = new Socket("127.0.0.1", 8888);
 
             // Get the input stream of socket(read line by line)
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
